@@ -1,0 +1,865 @@
+/* ================================
+  RESET GENERAL Y TIPOGRAFÍA
+================================= */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  font-family: 'Segoe UI', sans-serif;
+  height: 100%;
+  background-color: #f8f9fa;
+  color: #212529;
+  overflow-x: hidden;
+}
+
+h1, h2, h3 {
+  color: #1c1c1c;
+}
+
+.header-text h1 {
+  margin-bottom: 20px;
+
+}
+.header-text p {
+  margin-bottom: 20px;
+}
+
+main img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+/* ================================
+ESTRUCTURA GENERAL Y WRAPPER
+================================= */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  padding: 2rem 1rem;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+/* ================================
+MENU CARRUSEL
+================================= */
+/* ================================
+  MENU CARRUSEL DE TESTIMONIOS
+================================= */
+.testimonial-carousel {
+  position: relative;
+  max-width: 100%;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+.carousel-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.testimonial {
+  flex: 0 0 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 1rem;
+}
+
+
+.testimonial-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.testimonial-text {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.stars span {
+  color: gold;
+  font-size: 1.5rem;
+}
+
+.testimonial-name {
+  font-weight: bold;
+  margin-top: 10px;
+  color: #0b0f13;
+}
+
+.carousel-container:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .testimonial {
+    width: 100%;
+    padding: 15px;
+  }
+}
+
+/* Estilo para el efecto de animación del carrusel */
+.carousel-container {
+  animation: slide 20s infinite;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(-200%);
+  }
+  75% {
+    transform: translateX(-300%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 600px) {
+  .testimonial p {
+    font-size: 0.9rem;
+  }
+
+  .testimonial h3 {
+    font-size: 1rem;
+  }
+
+  .testimonial .stars {
+    font-size: 1rem;
+  }
+}
+
+
+/* ================================
+MENU CARRUSEL
+================================= */
+/* ================================
+HEADER GENERAL
+================================= */
+header {
+  background-color: rgb(43, 43, 43);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+
+.header-index h1,
+.header-pasoapaso h1,
+.header-herramientas h1,
+.header-faq h1,
+.header-contacto h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+/* logo */
+.logo-pagina {
+display: flex;
+  top: 0;
+  left: 0;
+  margin: 10px; /* Ajusta el margen según sea necesario */
+  height: 100px;
+  width: 100px;
+}
+/* logo */
+
+.header-index p {
+  font-size: 1rem;
+}
+
+/* ================================
+NAVBAR
+================================= */
+.navbar {
+  background-color: #424242;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+  background-color: #006319;
+}
+
+/* ================================
+SECCIONES Y CONTENIDO
+================================= */
+.intro {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.grid-pasos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem 0;
+}
+
+.paso {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.075);
+}
+
+.paso img {
+  width: 250px;
+  height: 150px;
+  border: black solid 1px;
+  margin: 5px;
+  align-self: center;
+}
+
+main article {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 1rem;
+}
+
+main article h3 {
+  margin-bottom: 0.5rem;
+}
+
+ul.list-group li {
+  background-color: #ffffff;
+}
+
+/* ================================
+  SECCIONES DE HERRAMIENTAS Y FAQ
+================================ */
+
+/* Estilo general de cada bloque de sección */
+section {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Títulos de secciones */
+section h2 {
+  font-size: 1.5rem;
+  color: #0b0f13;
+  margin-bottom: 1rem;
+}
+
+/* Listas dentro de las secciones */
+section ul {
+  list-style: disc inside;
+  padding-left: 1rem;
+}
+
+section ul li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+/* Párrafos de texto */
+section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Responsive: agrupar secciones con Grid en pantallas grandes */
+@media (min-width: 768px) {
+  main.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+}
+
+/* ================================
+FORMULARIOS
+================================= */
+form {
+  max-width: 600px;
+  margin: auto;
+}
+/* ================================
+FORMULARIOS
+================================= */
+
+.botones-container {
+  display: flex;
+  justify-content: space-between; /* Separar los botones */
+  gap: 20px; /* Espacio entre botones */
+  margin-top: 40px; /* Ajusta el margen superior si es necesario */
+}
+
+.btn-solicita {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #0b0f13;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  height: 35px;
+}
+
+.btn-solicita:hover {
+  background-color: #006319;
+}
+
+
+/* ================================
+FOOTER
+================================= */
+.footer-abajo {
+  display: grid;
+  
+  grid-template-rows: auto 1fr auto;
+
+}
+.footer {
+  background-color: #222;
+  color: #fff;
+  padding: 20px 0;
+  margin-top: 40px;
+  text-align: center;
+  position: relative; /* Esto asegura que el footer esté al final */
+  bottom: 0;
+  width: 100%; /* Asegura que el footer ocupe todo el ancho de la pantalla */
+}
+
+.footer-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-links {
+  margin-top: 10px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #006319;
+}
+
+@media (max-width: 600px) {
+  .footer-container {
+      padding: 0 10px;
+  }
+  .footer-links {
+      flex-direction: column;
+      gap: 8px;
+  }
+}
+/* solicitud de presupuesto */
+.solicitud-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+legend {
+  font-weight: bold;
+  padding: 0 10px;
+  color: #0b0f13;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+  color: #333;
+}
+
+.user-data {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.user-data input {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.btn {
+  padding: 12px 20px;
+  background-color: #0b0f13;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #006319;
+}
+
+@media (min-width: 600px) {
+  .user-data {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .user-data label,
+  .user-data input {
+    width: 100%;
+  }
+
+  .user-data input[type="text"],
+  .user-data input[type="email"] {
+    grid-column: span 2;
+  }
+
+  .btn {
+    grid-column: span 2;
+  }
+}
+/* ================================
+  RESET GENERAL Y TIPOGRAFÍA
+================================= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: 'Segoe UI', sans-serif;
+  height: 100%;
+  background-color: #f8f9fa;
+  color: #212529;
+  overflow-x: hidden;
+}
+
+h1, h2, h3 {
+  color: #1c1c1c;
+}
+
+main img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+/* ================================
+ESTRUCTURA GENERAL Y WRAPPER
+================================= */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  padding: 2rem 1rem;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
+
+/* ================================
+HEADER GENERAL
+================================= */
+header {
+  background-color: rgb(43, 43, 43);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1rem;
+}
+
+/* ================================
+NAVBAR
+================================= */
+.navbar {
+  background-color: #424242;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+  background-color: #006319;
+}
+
+/* ================================
+SECCIONES Y CONTENIDO
+================================= */
+.intro {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.grid-pasos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem 0;
+}
+
+.paso {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+main article {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+main article h3 {
+  margin-bottom: 0.5rem;
+}
+
+aside {
+  margin-top: 2rem;
+  border-left: 4px solid #0b0f13;
+}
+
+ul.list-group li {
+  background-color: #ffffff;
+}
+
+/* ================================
+SECCIONES DE HERRAMIENTAS Y FAQ
+================================= */
+section {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+section h2 {
+  font-size: 1.5rem;
+  color: #0b0f13;
+  margin-bottom: 1rem;
+}
+
+section ul {
+  list-style: disc inside;
+  padding-left: 1rem;
+}
+
+section ul li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+@media (min-width: 768px) {
+  main.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+}
+
+/* ================================
+FORMULARIOS
+================================= */
+form {
+  max-width: 600px;
+  margin: auto;
+}
+
+/* ================================
+BOTÓN VOLVER Y SOLICITAR
+================================= */
+.botones-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.btn-volver,
+.btn-solicita {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0b0f13;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  height: 40px;
+  min-width: 180px; /* Ajuste para los botones */
+  text-align: center;
+}
+
+.btn-volver:hover,
+.btn-solicita:hover {
+  background-color: #006319;
+}
+
+/* ================================
+FOOTER
+================================= */
+.footer {
+  background-color: #222;
+  color: #fff;
+  padding: 20px 0;
+  margin-top: 40px;
+  text-align: center;
+  position: relative; /* Cambiado de absolute a relative */
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-links {
+  margin-top: 10px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #006319;
+}
+
+@media (max-width: 600px) {
+  .footer-container {
+    padding: 0 10px;
+  }
+  .footer-links {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+/* ================================
+SOLICITUD DE PRESUPUESTO
+================================= */
+.solicitud-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+legend {
+  font-weight: bold;
+  padding: 0 10px;
+  color: #0b0f13;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+  color: #333;
+}
+
+.user-data {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.user-data input {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.btn {
+  padding: 12px 20px;
+  background-color: #0b0f13;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #006319;
+}
+
+@media (min-width: 600px) {
+  .user-data {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .user-data label,
+  .user-data input {
+    width: 100%;
+  }
+
+  .user-data input[type="text"],
+  .user-data input[type="email"] {
+    grid-column: span 2;
+  }
+
+  .btn {
+    grid-column: span 2;
+  }
+}
