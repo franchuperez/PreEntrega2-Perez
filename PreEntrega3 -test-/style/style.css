@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #3498db;
+  color: white;
+  padding: 16px;
+}
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+}
+
+footer {
+  background-color: #2ecc71;
+  color: white;
+  text-align: center;
+  padding: 16px;
+}
+
+.home-banner {
+  background-image: url("../images/banner.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  color: white;
+  text-align: center;
+}
+
+.product-card {
+  border: 1px solid #3498db;
+  padding: 16px;
+  transition: all 0.3s ease-in-out;
+}
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 16px;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 8px;
+  border: 1px solid #3498db;
+}
+.contact-form button {
+  background-color: #3498db;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.contact-form button:hover {
+  background-color: rgb(33.1380753138, 125.1882845188, 186.8619246862);
+}
+
+/*# sourceMappingURL=style.css.map */
