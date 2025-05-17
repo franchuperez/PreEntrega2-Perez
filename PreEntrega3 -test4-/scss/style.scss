@@ -9,6 +9,31 @@ $color-verde-muy-oscuro: #1d2829;
 $color-gris-claro: #ddd;
 $color-texto-secundario: #555;
 
+// MIXINS
+// Mixin para botones reutilizables con transición y hover
+@mixin boton-estilo($bg-color, $color-texto: $color-blanco) {
+  background-color: $bg-color;
+  color: $color-texto;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  &:hover {
+    background-color: darken($bg-color, 10%);
+    color: lighten($color-texto, 10%);
+  }
+}
+
+// Mixin para flexbox centrar (opcional)
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 // Estilos generales
 * {
   margin: 0;
@@ -83,6 +108,7 @@ nav {
         color: $color-blanco;
         font-weight: bold;
         text-transform: uppercase;
+        transition: color 0.3s ease;
 
         &:hover {
           color: $color-verde;
@@ -246,17 +272,10 @@ label {
 }
 
 button {
-  background-color: $color-verde-oscuro;
-  color: $color-blanco;
-  font-size: 1.1rem;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
+  // Usamos el mixin para botones
+  @include boton-estilo($color-verde-oscuro);
 
-  &:hover {
-    background-color: $color-verde-oscuro;
-  }
+  font-size: 1.1rem;
 }
 
 .inicio-grid {
